@@ -28,8 +28,3 @@ node_modules
 .lock-wscript
 
 .DS_Store
-
-# Generated files
-/bundle.js
-/bundle.js.map
-/dist/
