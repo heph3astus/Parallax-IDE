@@ -2,7 +2,7 @@
 
 const expect = require('expect');
 
-describe('Parallax IDE', function(){
+describe('Perpendiculax IDE', function(){
 
   it('has an example test', function(done){
     expect(true).toEqual(true);

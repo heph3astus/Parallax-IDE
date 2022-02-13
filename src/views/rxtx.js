@@ -20,7 +20,10 @@ const styles = {
   bar: {
     margin: '0',
     height: '25px',
-    backgroundColor: '#CFD8DC'
+    backgroundColor: '#CFD8DC',
+    borderBottomLeftRadius: '10px',
+    borderBottomRightRadius: '10px',
+    boxShadow: '0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12)',
   },
   indicator: {
     backgroundColor: grey,

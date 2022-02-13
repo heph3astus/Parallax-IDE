@@ -11,7 +11,7 @@ class FileOperationList extends React.Component {
 
     return (
       <Menu effect="zoomin" method="click" position="bl">
-        <MainButton iconResting="ion-plus-round" iconActive="ion-close-round" />
+        <MainButton iconResting="ion-plus-round" iconActive="ion-close-round"/>
         {children}
       </Menu>
     );

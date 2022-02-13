@@ -12,6 +12,7 @@ class Editor extends React.Component {
     container.style.display = 'flex';
     container.style.flex = '1';
     container.style.flexDirection = 'column';
+    container.style.height = '100%';
     container.setAttribute('id', 'editorContainer');
 
     container.appendChild(cm.getWrapperElement());

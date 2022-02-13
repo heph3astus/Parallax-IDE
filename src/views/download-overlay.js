@@ -86,7 +86,9 @@ const styles = {
     backgroundColor: '#fcdede',
     padding: '10px 16px',
     textAlign: 'center',
-    width: '100%'
+    width: '100%',
+    borderBottomLeftRadius: '20px',
+    borderBottomRightRadius: '20px'
   },
   refreshButton: {
     marginRight: 'auto'

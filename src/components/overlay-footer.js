@@ -7,7 +7,9 @@ const styles = {
   overlayButtonContainer: {
     marginTop: 'auto',
     marginLeft: 'auto',
-    height: '40px'
+    height: '40px',
+    borderBottomLeftRadius: '20px',
+    borderBottomRightRadius: '20px'
   }
 };
 

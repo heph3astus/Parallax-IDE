@@ -6,8 +6,9 @@ const styles = {
   transmit: {
     margin: 0,
     height: '32px',
-    backgroundColor: 'white',
-    boxShadow: 'inset 0px 5px 10px -5px rgba(0, 0, 0, 0.26)'
+    boxShadow: '0 2px 1px 0 rgba(0,0,0,.001),0 1px 5px 0 rgba(0,0,0,.12)',
+    borderTopLeftRadius: '10px',
+    borderTopRightRadius: '10px',
   },
   transmitInput: {
     border: '0px',

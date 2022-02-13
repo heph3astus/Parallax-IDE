@@ -8,7 +8,9 @@ const styles = {
     width: '100%',
     height: '8px',
     backgroundColor: '#b0d0ef',
-    marginTop: 'auto'
+    marginTop: 'auto',
+    position: 'relative',
+    bottom: '20'
   },
   progressBarStyle: {
     height: '100%',

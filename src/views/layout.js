@@ -23,12 +23,16 @@ const styles = {
   },
   main: {
     display: 'flex',
+    height: '100%',
+    width: '100%',
     flex: 1
   },
-  editor: {
+  editWindow: {
+    width: '100%',
+    height: 'calc(100% - 362px)',
     display: 'flex',
-    flex: 1,
-    flexDirection: 'column'
+    flexGrow: 1,
+    overflow: 'scroll'
   },
   sidebar: {
     flex: '0 0 13rem',
@@ -41,6 +45,23 @@ const styles = {
     width: 0,
     height: 0,
     zIndex: 9999
+  },
+  infoComp: {
+    position: 'fixed',
+    bottom: '0px',
+    padding: '10px',
+    paddingLeft: '15px',
+    width: 'calc(100% - 238px)',
+  },
+  editorComponent: {
+    flexGrow: 1,
+    width: '100%'
+  },
+  beneathBar: {
+    position: 'fixed',
+    top: '65px',
+    height: '100%',
+    width: '100%'
   }
 };
 
@@ -62,13 +83,17 @@ class Layout extends React.Component {
     return (
       <div style={styles.container}>
         <div style={styles.appbar}><AppBar/></div>
-        <div style={styles.main}>
-          <main style={styles.editor}>
-            <Editor handlers={handlers}/>
-            <Terminal store={store} handlers={handlers} />
-            <RxTx handlers={handlers} />
-          </main>
-          <div style={styles.sidebar}><SideBar workspace={workspace} handlers={handlers}/></div>
+        <div style={styles.beneathBar}>
+          <div style={styles.main}>
+            <main style={styles.editWindow}>
+              <div style={styles.editorComponent}><Editor handlers={handlers}/></div>
+              <div style={styles.infoComp}>
+                <Terminal store={store} handlers={handlers} />
+                <RxTx handlers={handlers} />
+              </div>
+            </main>
+            <div style={styles.sidebar}><SideBar workspace={workspace} handlers={handlers}/></div>
+          </div>
         </div>
         <div ref={(ref) => this._overlay = ref} style={styles.overlay}></div>
         <div>{this.props.children}</div>
