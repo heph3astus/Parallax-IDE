@@ -29,7 +29,7 @@ const styles = {
   },
   editWindow: {
     width: '100%',
-    height: 'calc(100% - 362px)',
+    height: 'calc(100% - 308px)',
     display: 'flex',
     flexGrow: 1,
     overflow: 'scroll'
@@ -55,11 +55,12 @@ const styles = {
   },
   editorComponent: {
     flexGrow: 1,
-    width: '100%'
+    width: '100%',
+    paddingLeft: '15px'
   },
   beneathBar: {
     position: 'fixed',
-    top: '65px',
+    top: '10px',
     height: '100%',
     width: '100%'
   }

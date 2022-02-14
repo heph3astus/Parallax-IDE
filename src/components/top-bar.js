@@ -6,7 +6,7 @@ const AppBar = require('react-material/components/AppBar');
 const styles = {
   appbar: {
     normalAppBarStyle: {
-      backgroundColor: '#2c83d8'
+      backgroundColor: 'transparent'
     }
   },
   logo: {

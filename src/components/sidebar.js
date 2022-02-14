@@ -7,7 +7,7 @@ const Card = require('./card');
 const styles = {
   card: {
     margin: 0,
-    height: 'calc(100% - 106px)',
+    height: 'calc(100% - 136px)',
     width: '100%',
     display: 'flex',
     flexDirection: 'column',
